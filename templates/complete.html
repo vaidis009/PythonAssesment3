@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+    {% block body %}
+    	<div>
+	    	<h1>Words Game</h1>
+	    	  <h3 name="sourceWord">{{sourceWordOutput}}</h3>
+			  
+		
+	        <form action="/validation" method="post">
+	      		<input type="TEXT" name="word1"placeholder="enter the word"><br>
+	      		<input type="TEXT" name="word2"placeholder="enter the word"><br>
+	      		<input type="TEXT" name="word3"placeholder="enter the word"><br>
+	      		<input type="TEXT" name="word4"placeholder="enter the word"><br>
+	      		<input type="TEXT" name="word5"placeholder="enter the word"><br>
+	      		<input type="TEXT" name="word6"placeholder="enter the word"><br>
+	      		<input type="TEXT" name="word7"placeholder="enter the word"><br>
+	            
+	           
+	            <input id="button" type="Submit" value="Submit"><br>
+
+
+	        </form>
+			<h3>{{result}}</h3>
+        </div>
+    {% endblock %}
